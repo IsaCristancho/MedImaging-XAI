@@ -5,14 +5,18 @@ description = "End-to-end medical imaging AI platform for image reconstruction, 
 readme = "README.md"
 requires-python = ">=3.13,<3.14"
 dependencies = [
+    "fastapi>=0.162.0",
     "matplotlib>=3.11.2",
+    "medmnist>=3.0.2",
     "numpy>=2.5.3",
     "pandas>=3.0.6",
     "pydicom>=3.0.2",
+    "python-multipart>=0.0.32",
     "scikit-image>=0.26.0",
     "scipy>=1.18.1",
     "torch>=2.14.1",
     "torchvision>=0.29.1",
+    "uvicorn[standard]>=0.54.0",
 ]
 
 [dependency-groups] # cosas que no forman parte del paquete pero se necesitan para el desarrollo
